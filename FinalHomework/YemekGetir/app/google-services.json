@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "767066815459",
+    "project_id": "yemeksiparis-28622",
+    "storage_bucket": "yemeksiparis-28622.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767066815459:android:d2b8e46abaeb6559663ed6",
+        "android_client_info": {
+          "package_name": "com.helloworldstudios.yemekgetir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767066815459-elki1cp92r98s1kdkjnuq6ugjhsbl24d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeVvKyd6ywLYYuTF60Plso7K9qkkiqo4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767066815459-elki1cp92r98s1kdkjnuq6ugjhsbl24d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
