@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_successfully_login_splash.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_successfully_login_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_cart.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_new_account.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_new_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_base.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\fragment_forgot_password.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.helloworldstudios.yemekgetir.app-mergeDebugResources-52:/layout/fragment_home.xml",
+        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_home.xml"
+    }
+]

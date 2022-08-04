@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.helloworldstudios.yemekgetir.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_newAccountFragment"
+            app:destination="@id/newAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_successfullyLoginSplashFragment"
+            app:destination="@id/successfullyLoginSplashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAccountFragment"
+        android:name="com.helloworldstudios.yemekgetir.NewAccountFragment"
+        android:label="fragment_new_account"
+        tools:layout="@layout/fragment_new_account" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.helloworldstudios.yemekgetir.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_newAccountFragment"
+            app:destination="@id/newAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.helloworldstudios.yemekgetir.BaseFragment"
+        android:label="BaseFragment" />
+    <fragment
+        android:id="@+id/successfullyLoginSplashFragment"
+        android:name="com.helloworldstudios.yemekgetir.SuccessfullyLoginSplashFragment"
+        android:label="SuccessfullyLoginSplashFragment" >
+        <action
+            android:id="@+id/action_successfullyLoginSplashFragment_to_baseFragment"
+            app:destination="@id/baseFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
