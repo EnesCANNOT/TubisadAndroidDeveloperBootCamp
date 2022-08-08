@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/drawable/ic_email.xml" value="0.1" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/drawable/ic_login_logo.xml" value="0.168" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/drawable/ic_user.xml" value="0.168" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/drawable/search_view_background.xml" value="0.1815" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/activity_base.xml" value="0.25416666666666665" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/card_design_cart.xml" value="0.42496050552922593" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/card_design_home.xml" value="0.536" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_base.xml" value="0.264" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_home_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_new_account.xml" value="0.264" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_profile.xml" value="0.4" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_restaurants.xml" value="0.25416666666666665" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_successfully_login_splash.xml" value="0.1" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/layout/fragment_yemek_detay.xml" value="0.25416666666666665" />
+        <entry key="..\:/Desktop/S_Projects/TubisadAndroidDeveloperBootcamp/Homeworks/FinalHomework/YemekGetir/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

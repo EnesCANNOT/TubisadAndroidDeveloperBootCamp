@@ -4,22 +4,47 @@ package com.helloworldstudios.yemekgetir.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import com.helloworldstudios.yemekgetir.ProfileFragment;
 import com.helloworldstudios.yemekgetir.R;
+import com.helloworldstudios.yemekgetir.ui.fragment.ProfileFragment;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentProfileBinding extends ViewDataBinding {
+  @NonNull
+  public final Button buttonSignOut;
+
+  @NonNull
+  public final ImageView ivProfileFragment;
+
+  @NonNull
+  public final TextView tvUserEmail;
+
+  @NonNull
+  public final TextView tvUserFullname;
+
+  @NonNull
+  public final TextView tvUserPhone;
+
   @Bindable
   protected ProfileFragment mProfileFragmentObject;
 
-  protected FragmentProfileBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  protected FragmentProfileBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      Button buttonSignOut, ImageView ivProfileFragment, TextView tvUserEmail,
+      TextView tvUserFullname, TextView tvUserPhone) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonSignOut = buttonSignOut;
+    this.ivProfileFragment = ivProfileFragment;
+    this.tvUserEmail = tvUserEmail;
+    this.tvUserFullname = tvUserFullname;
+    this.tvUserPhone = tvUserPhone;
   }
 
   public abstract void setProfileFragmentObject(@Nullable ProfileFragment profileFragmentObject);

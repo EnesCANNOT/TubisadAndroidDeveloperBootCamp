@@ -11,7 +11,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.airbnb.lottie.LottieAnimationView;
 import com.helloworldstudios.yemekgetir.R;
-import com.helloworldstudios.yemekgetir.SuccessfullyLoginSplashFragment;
+import com.helloworldstudios.yemekgetir.ui.fragment.SuccessfullyLoginSplashFragment;
 import java.lang.Deprecated;
 import java.lang.Object;
 

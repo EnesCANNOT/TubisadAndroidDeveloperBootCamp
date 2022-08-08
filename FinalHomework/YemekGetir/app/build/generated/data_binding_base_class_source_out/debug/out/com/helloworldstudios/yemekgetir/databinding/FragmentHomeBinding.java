@@ -4,22 +4,55 @@ package com.helloworldstudios.yemekgetir.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.SearchView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import com.helloworldstudios.yemekgetir.HomeFragment;
+import androidx.recyclerview.widget.RecyclerView;
 import com.helloworldstudios.yemekgetir.R;
+import com.helloworldstudios.yemekgetir.ui.adapter.YemeklerAdapter;
+import com.helloworldstudios.yemekgetir.ui.fragment.HomeFragment;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentHomeBinding extends ViewDataBinding {
+  @NonNull
+  public final Button buttonAZ;
+
+  @NonNull
+  public final Button buttonDescending;
+
+  @NonNull
+  public final Button buttonPriceAscending;
+
+  @NonNull
+  public final Button buttonZA;
+
+  @NonNull
+  public final RecyclerView rvYemek;
+
+  @NonNull
+  public final SearchView searchView;
+
   @Bindable
   protected HomeFragment mHomeFragmentObject;
 
-  protected FragmentHomeBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @Bindable
+  protected YemeklerAdapter mYemeklerAdapter;
+
+  protected FragmentHomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      Button buttonAZ, Button buttonDescending, Button buttonPriceAscending, Button buttonZA,
+      RecyclerView rvYemek, SearchView searchView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonAZ = buttonAZ;
+    this.buttonDescending = buttonDescending;
+    this.buttonPriceAscending = buttonPriceAscending;
+    this.buttonZA = buttonZA;
+    this.rvYemek = rvYemek;
+    this.searchView = searchView;
   }
 
   public abstract void setHomeFragmentObject(@Nullable HomeFragment homeFragmentObject);
@@ -27,6 +60,13 @@ public abstract class FragmentHomeBinding extends ViewDataBinding {
   @Nullable
   public HomeFragment getHomeFragmentObject() {
     return mHomeFragmentObject;
+  }
+
+  public abstract void setYemeklerAdapter(@Nullable YemeklerAdapter yemeklerAdapter);
+
+  @Nullable
+  public YemeklerAdapter getYemeklerAdapter() {
+    return mYemeklerAdapter;
   }
 
   @NonNull

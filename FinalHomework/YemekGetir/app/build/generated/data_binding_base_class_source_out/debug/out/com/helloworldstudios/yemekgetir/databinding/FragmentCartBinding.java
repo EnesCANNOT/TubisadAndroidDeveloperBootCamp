@@ -4,22 +4,47 @@ package com.helloworldstudios.yemekgetir.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import com.helloworldstudios.yemekgetir.CartFragment;
+import androidx.recyclerview.widget.RecyclerView;
 import com.helloworldstudios.yemekgetir.R;
+import com.helloworldstudios.yemekgetir.ui.adapter.SepetYemeklerAdapter;
+import com.helloworldstudios.yemekgetir.ui.fragment.CartFragment;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentCartBinding extends ViewDataBinding {
+  @NonNull
+  public final Button buttonConfirmCart;
+
+  @NonNull
+  public final RecyclerView recyclerView;
+
+  @NonNull
+  public final TextView tvTotal;
+
+  @NonNull
+  public final TextView tvTotalPrice;
+
   @Bindable
   protected CartFragment mCartFragmentObject;
 
-  protected FragmentCartBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @Bindable
+  protected SepetYemeklerAdapter mSepetYemeklerAdapter;
+
+  protected FragmentCartBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      Button buttonConfirmCart, RecyclerView recyclerView, TextView tvTotal,
+      TextView tvTotalPrice) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonConfirmCart = buttonConfirmCart;
+    this.recyclerView = recyclerView;
+    this.tvTotal = tvTotal;
+    this.tvTotalPrice = tvTotalPrice;
   }
 
   public abstract void setCartFragmentObject(@Nullable CartFragment cartFragmentObject);
@@ -27,6 +52,13 @@ public abstract class FragmentCartBinding extends ViewDataBinding {
   @Nullable
   public CartFragment getCartFragmentObject() {
     return mCartFragmentObject;
+  }
+
+  public abstract void setSepetYemeklerAdapter(@Nullable SepetYemeklerAdapter sepetYemeklerAdapter);
+
+  @Nullable
+  public SepetYemeklerAdapter getSepetYemeklerAdapter() {
+    return mSepetYemeklerAdapter;
   }
 
   @NonNull

@@ -4,7 +4,7 @@
             "outputFile": "com.helloworldstudios.yemekgetir.app-mergeDebugResources-51:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ENES\\.gradle\\caches\\transforms-3\\5b761cd1492833886cddc5e12d5a71e9\\transformed\\appcompat-1.4.2\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\ENES\\.gradle\\caches\\transforms-3\\925b12532aecde37d1c863170cdba021\\transformed\\appcompat-1.4.2\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

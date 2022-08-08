@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="gelenYemek" type="com.helloworldstudios.yemekgetir.data.entity.Yemekler" />
+        <variable name="yemekDetayFragmentObject" type="com.helloworldstudios.yemekgetir.ui.fragment.YemekDetayFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.YemekDetayFragment">
+        
+
+        <ImageView
+            android:id="@+id/ivYemekDetayFragment"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvYemekAdDetayFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@{gelenYemek.yemek_adi}"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivYemekDetayFragment" />
+
+        <TextView
+            android:id="@+id/tvYemekFiyatDetayFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text='@{Integer.toString(gelenYemek.yemek_fiyat) + " ₺"}'
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvYemekAdDetayFragment" />
+
+        <LinearLayout
+            android:id="@+id/yemekAdet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sepeteEkle"
+            app:layout_constraintTop_toBottomOf="@id/tvYemekFiyatDetayFragment">
+
+            <Button
+                android:id="@+id/eksiButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="@{()-> yemekDetayFragmentObject.yemekAdetEksi()}"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/yemekSiparisAdet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/artiButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="@{()-> yemekDetayFragmentObject.yemekAdetArti()}"
+                android:text="+"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sepeteEkle"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="@{()-> yemekDetayFragmentObject.buttonAddToCart(gelenYemek.yemek_adi,gelenYemek.yemek_resim_adi,gelenYemek.yemek_fiyat,Integer.parseInt(yemekSiparisAdet.getText().toString()))}"
+            android:text="SEPETE EKLE"
+            app:layout_constraintEnd_toStartOf="@id/yemekAdet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvYemekFiyatDetayFragment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

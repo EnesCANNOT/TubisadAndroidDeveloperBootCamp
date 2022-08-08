@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="homeFragmentObject" type="com.helloworldstudios.yemekgetir.ui.fragment.HomeFragment" />
+        <variable name="yemeklerAdapter" type="com.helloworldstudios.yemekgetir.ui.adapter.YemeklerAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.HomeFragment">
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/search_view_background"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Food or Beverage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvYemek"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:adapter="@{yemeklerAdapter}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA_Z" />
+
+        <Button
+            android:id="@+id/buttonA_Z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:onClick="@{() -> homeFragmentObject.buttonA_Z()}"
+            android:text="A-Z"
+            app:layout_constraintEnd_toStartOf="@+id/buttonZ_A"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <Button
+            android:id="@+id/buttonZ_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:onClick="@{() -> homeFragmentObject.buttonZ_A()}"
+            android:text="Z-A"
+            app:layout_constraintEnd_toStartOf="@+id/buttonDescending"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonA_Z"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+        <Button
+            android:id="@+id/buttonDescending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:onClick="@{() -> homeFragmentObject.fiyatAzalan()}"
+            android:text="Fiyat ▼"
+            app:layout_constraintEnd_toStartOf="@+id/buttonPriceAscending"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonZ_A"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <Button
+            android:id="@+id/buttonPriceAscending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:onClick="@{() -> homeFragmentObject.fiyatArtan()}"
+            android:text="Fiyat ▲"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonDescending"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

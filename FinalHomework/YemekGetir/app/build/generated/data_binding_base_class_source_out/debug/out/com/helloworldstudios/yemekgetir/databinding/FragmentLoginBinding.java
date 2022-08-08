@@ -14,8 +14,8 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.helloworldstudios.yemekgetir.LoginFragment;
 import com.helloworldstudios.yemekgetir.R;
+import com.helloworldstudios.yemekgetir.ui.fragment.LoginFragment;
 import java.lang.Deprecated;
 import java.lang.Object;
 
