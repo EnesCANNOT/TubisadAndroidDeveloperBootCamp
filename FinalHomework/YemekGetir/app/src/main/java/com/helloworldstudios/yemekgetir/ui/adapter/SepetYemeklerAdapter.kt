@@ -4,14 +4,14 @@ import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
+import com.helloworldstudios.yemekgetir.R
 import com.helloworldstudios.yemekgetir.data.entity.SepetYemekler
-import com.helloworldstudios.yemekgetir.data.entity.Yemekler
 import com.helloworldstudios.yemekgetir.databinding.CardDesignCartBinding
 import com.helloworldstudios.yemekgetir.ui.viewmodel.CartFragmentViewModel
-import com.helloworldstudios.yemekgetir.ui.viewmodel.HomeFragmentViewModel
 import com.squareup.picasso.Picasso
 
 class SepetYemeklerAdapter(var mContext: Context, var sepetYemekListesi: List<SepetYemekler>, var viewModel: CartFragmentViewModel) : RecyclerView.Adapter<SepetYemeklerAdapter.CardDesignCartHolder>(){
@@ -24,30 +24,21 @@ class SepetYemeklerAdapter(var mContext: Context, var sepetYemekListesi: List<Se
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardDesignCartHolder {
         val layoutInflater = LayoutInflater.from(mContext)
-        val binding = CardDesignCartBinding.inflate(layoutInflater, parent, false)
+        val binding: CardDesignCartBinding = DataBindingUtil.inflate(layoutInflater, R.layout.card_design_cart, parent, false)
         return CardDesignCartHolder(binding)
     }
 
     override fun onBindViewHolder(holder: CardDesignCartHolder, position: Int) {
-        val yemek = sepetYemekListesi.get(position)
-        holder.binding.sepetYemeklerObject = yemek
+        val sepettekiYemek = sepetYemekListesi.get(position)
+        holder.binding.sepetYemeklerObject = sepettekiYemek
 
-//        var alinanSiparisAdedi = holder.binding.tvYemekAdetFiyatCart.text.toString()
-//        var yemek_siparis_adet = alinanSiparisAdedi.toInt()
-
-//        holder.binding.tvYemekAdCart.text = "${yemek.yemek_adi}"
-//        holder.binding.tvYemekAdetCart.text = "${yemek.yemek_siparis_adet} adet"
-//        holder.binding.tvYemekFiyatCart.text = "₺ ${(yemek.yemek_siparis_adet * yemek.yemek_fiyat)}"
-
-        Log.e("Look", "Buradayım")
-
-        val url = "http://kasimadalan.pe.hu/yemekler/resimler/${yemek.yemek_resim_adi}"
-        Picasso.get().load(url).into(holder.binding.ivYemekResimCart)
+        val url = "http://kasimadalan.pe.hu/yemekler/resimler/${sepettekiYemek.yemek_resim_adi}"
+        Picasso.get().load(url).into(holder.binding.ivYemekSepet)
         holder.binding.ivDelete.setOnClickListener {
-            Snackbar.make(it,"${yemek.yemek_adi} sepetten çıkarılsın mı?", Snackbar.LENGTH_LONG).setAction("EVET"){
-                Snackbar.make(it,"${yemek.yemek_adi} sepetten çıkarıldı.", Snackbar.LENGTH_LONG).show()
-                viewModel.sil(yemek.sepet_yemek_id)
-                viewModel.yrepo.tumSepetiGoster()
+            Snackbar.make(it,"${sepettekiYemek.yemek_adi} sepetten çıkarılsın mı?", Snackbar.LENGTH_LONG).setAction("EVET"){
+                Snackbar.make(it,"${sepettekiYemek.yemek_adi} sepetten çıkarıldı.", Snackbar.LENGTH_LONG).show()
+                viewModel.sepettekiYemekSil(sepettekiYemek.sepet_yemek_id, FirebaseAuth.getInstance().currentUser!!.email.toString())
+                viewModel.sepettekiYemekleriYukle(FirebaseAuth.getInstance().currentUser!!.email.toString())
             }.show()
         }
     }

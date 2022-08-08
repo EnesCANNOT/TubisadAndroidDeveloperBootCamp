@@ -1,198 +1,206 @@
 [
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_restaurant.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_restaurant.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-xxhdpi_ic_login_logo.png.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-xxhdpi\\ic_login_logo.png"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_login.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_login.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_lock.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_lock.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_search_view_background.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/search_view_background.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_cart.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_cart.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_yemek_detay.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_yemek_detay.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-mdpi_ic_login_logo.png.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-mdpi\\ic_login_logo.png"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/navigation_base_nav.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/navigation/base_nav.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_restaurant.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_restaurant.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-ldpi_ic_login_logo.png.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-ldpi\\ic_login_logo.png"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_card_design_cart.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/card_design_cart.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/menu/bottom_nav_menu.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_phone.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_phone.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-anydpi-v24_ic_login_logo.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-anydpi-v24\\ic_login_logo.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_cart.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_cart.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_home.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_home.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\raw_okey.json.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\raw\\okey.json"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_delete.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_delete.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/navigation_main_nav.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/navigation/main_nav.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-xhdpi_ic_login_logo.png.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-xhdpi/ic_login_logo.png"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_email.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/xml_backup_rules.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_login.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_successfully_login_splash.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_successfully_login_splash.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-xhdpi_ic_login_logo.png.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-xhdpi\\ic_login_logo.png"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/raw_okey.json.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/raw/okey.json"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-ldpi_ic_login_logo.png.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-ldpi/ic_login_logo.png"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_card_design_home.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\card_design_home.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_cart.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_cart.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_card_design_cart.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\card_design_cart.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/raw_login.json.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/raw/login.json"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-hdpi_ic_login_logo.png.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-hdpi\\ic_login_logo.png"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_profile.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_profile.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_phone.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_phone.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\raw_sepet.json.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\raw\\sepet.json"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_activity_base.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/activity_base.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_person.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_new_account.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_new_account.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-anydpi-v24_ic_login_logo.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-anydpi-v24/ic_login_logo.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\raw_login.json.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\raw\\login.json"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_successfully_login_splash.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_successfully_login_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\navigation_main_nav.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\navigation\\main_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\menu\\bottom_nav_menu.xml"
     },
     {
         "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_cart.xml.flat",
         "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_cart.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-xxxhdpi_ic_login_logo.png.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-xxxhdpi/ic_login_logo.png"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_yemek_detay.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_yemek_detay.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_email.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_email.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_search_view_background.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\search_view_background.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/xml_data_extraction_rules.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\navigation_base_nav.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\navigation\\base_nav.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-mdpi_ic_login_logo.png.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-mdpi/ic_login_logo.png"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_activity_base.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\activity_base.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-hdpi_ic_login_logo.png.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-hdpi/ic_login_logo.png"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_home.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_home.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_card_design_home.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/card_design_home.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable_ic_person.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/drawable/ic_person.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_forgot_password.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_forgot_password.xml"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable-xxxhdpi_ic_login_logo.png.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-pngs-48:\\drawable-xxxhdpi\\ic_login_logo.png"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/drawable-xxhdpi_ic_login_logo.png.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-pngs-48:/drawable-xxhdpi/ic_login_logo.png"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_fragment_new_account.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/fragment_new_account.xml"
-    },
-    {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/layout_activity_main.xml.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.helloworldstudios.yemekgetir.app-merged_res-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.helloworldstudios.yemekgetir.app-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-merged_res-53:\\layout_fragment_forgot_password.xml.flat",
+        "source": "C:\\Users\\ENES\\.gradle\\daemon\\7.3.3\\com.helloworldstudios.yemekgetir.app-main-55:\\layout\\fragment_forgot_password.xml"
     }
 ]

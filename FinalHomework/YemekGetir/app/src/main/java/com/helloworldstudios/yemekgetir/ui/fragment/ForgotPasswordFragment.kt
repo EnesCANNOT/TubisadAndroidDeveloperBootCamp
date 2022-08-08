@@ -41,7 +41,7 @@ class ForgotPasswordFragment : Fragment() {
         if (checkValidEmail(email)){
             auth.sendPasswordResetEmail(email)
                 .addOnSuccessListener {
-                    Toast.makeText(requireActivity(), R.string.password_reset_link_sent, Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireActivity(), "Şifre sıfırlama linki mailinize gönderildi.", Toast.LENGTH_LONG).show()
                 }.addOnFailureListener{
                     Log.e("ForgotPassword Fragment", it.localizedMessage.toString())
                     Toast.makeText(requireActivity(), it.localizedMessage, Toast.LENGTH_LONG).show()
@@ -53,12 +53,12 @@ class ForgotPasswordFragment : Fragment() {
         if(email.isEmpty()){
             binding.etEmailFromForgotPasswordFragment.requestFocus()
             Log.e("ForgotPassword Fragment", "Email is empty")
-            Toast.makeText(requireActivity(), R.string.email_can_not_be_empty, Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), "Email boş olamaz!", Toast.LENGTH_LONG).show()
             return false
         } else{
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 Log.e("ForgotPassword Fragment", "Email type is invalid")
-                Toast.makeText(requireActivity(), R.string.invalid_email_type, Toast.LENGTH_LONG).show()
+                Toast.makeText(requireActivity(), "Geçersiz Email Tipi!\nÖrnek Email : yemekgetir@gmail.com", Toast.LENGTH_LONG).show()
                 return false
             } else{
                 Log.e("ForgotPassword Fragment", "Email is okay")

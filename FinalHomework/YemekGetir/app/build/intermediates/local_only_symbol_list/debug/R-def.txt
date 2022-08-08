@@ -27,6 +27,7 @@ id action_loginFragment_to_forgotPasswordFragment
 id action_loginFragment_to_newAccountFragment
 id action_loginFragment_to_successfullyLoginSplashFragment
 id action_yemekDetayFragment_to_homeFragment
+id anim
 id artiButton
 id base_nav
 id bottomNav
@@ -39,6 +40,7 @@ id buttonPriceAscending
 id buttonRegister
 id buttonSignOut
 id buttonZ_A
+id cardSepetYemek
 id cardYemek
 id cartFragment
 id eksiButton
@@ -58,7 +60,7 @@ id ivDelete
 id ivProfileFragment
 id ivYemekDetayFragment
 id ivYemekResim
-id ivYemekResimCart
+id ivYemekSepet
 id loginFragment
 id lottieLoginAnimation
 id main_nav
@@ -68,6 +70,7 @@ id profileFragment
 id recyclerView
 id rvYemek
 id searchView
+id sepetBos
 id sepeteEkle
 id successfullyLoginSplashFragment
 id textInputLayout
@@ -76,6 +79,8 @@ id textInputLayout3
 id textInputLayout4
 id textInputLayout5
 id textInputLayout6
+id textViewYemekAd
+id textViewYemekFiyat
 id toolbar
 id toolbarNewAccount
 id tvForgotPasswordFromLoginFragment
@@ -88,15 +93,13 @@ id tvUserEmail
 id tvUserFullname
 id tvUserPhone
 id tvYemekAd
-id tvYemekAdCart
 id tvYemekAdDetayFragment
-id tvYemekAdetCart
-id tvYemekFiyat
-id tvYemekFiyatCart
 id tvYemekFiyatDetayFragment
 id yemekAdet
 id yemekDetayFragment
+id yemekFiyat
 id yemekSiparisAdet
+id yemekToplamFiyat
 layout activity_base
 layout activity_main
 layout card_design_cart
@@ -116,10 +119,15 @@ navigation base_nav
 navigation main_nav
 raw login
 raw okey
+raw sepet
+string added_to_cart
+string amount
+string amount_zero
 string app_name
+string auth_failed
+string cart_confirmed
 string default_web_client_id
 string email_can_not_be_empty
-string email_not_matched_new_acc_fragment
 string fullname_empty_from_new_acc_fragment
 string gcm_defaultSenderId
 string google_api_key
@@ -134,6 +142,8 @@ string password_reset_link_sent
 string phone_number_is_empty
 string phone_number_is_invalid
 string project_id
+string verification_email
+string verify_registration
 style Theme.YemekGetir
 xml backup_rules
 xml data_extraction_rules

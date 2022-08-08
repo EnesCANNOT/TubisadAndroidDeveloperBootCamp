@@ -1,6 +1,7 @@
 package com.helloworldstudios.yemekgetir.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -25,6 +26,11 @@ class HomeFragment : Fragment(){
         binding.homeFragmentObject = this
 
         viewModel.yemeklerListesi.observe(viewLifecycleOwner){
+
+//            for (yemek in it){
+//                Log.e("Yemek", yemek.toString())
+//            }
+
             val adapter = YemeklerAdapter(requireContext(), it, viewModel)
             binding.yemeklerAdapter = adapter
         }

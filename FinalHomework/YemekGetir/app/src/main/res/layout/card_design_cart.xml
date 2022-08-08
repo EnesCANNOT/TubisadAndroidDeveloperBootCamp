@@ -5,88 +5,100 @@
 
     <data>
         <variable name="sepetYemeklerObject" type="com.helloworldstudios.yemekgetir.data.entity.SepetYemekler" />
-        <variable name="cartFragmentObject" type="com.helloworldstudios.yemekgetir.ui.fragment.CartFragment" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="5dp"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardSepetYemek"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="10dp"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageView
-                    android:id="@+id/ivYemekResimCart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:id="@+id/ivYemekSepet"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/ic_launcher_background"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    tools:srcCompat="@drawable/ic_launcher_background" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/tvYemekAdCart"
+                    android:id="@+id/tvYemekAd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
                     android:text="@{sepetYemeklerObject.yemek_adi}"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/ivYemekResimCart"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <TextView
-                    android:id="@+id/tvYemekAdetCart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:text="@{Integer.toString(sepetYemeklerObject.yemek_siparis_adet)}"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tvYemekAdCart"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/yemekToplamFiyat"
+                    app:layout_constraintStart_toEndOf="@+id/ivYemekSepet"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/tvYemekFiyatCart"
+                    android:id="@+id/yemekFiyat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:text="@{Integer.toString(sepetYemeklerObject.yemek_fiyat)}"
+                    android:text='@{sepetYemeklerObject.yemek_fiyat+".00 ₺"}'
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/ivDelete"
+                    app:layout_constraintEnd_toStartOf="@+id/yemekSiparisAdet"
+                    app:layout_constraintStart_toStartOf="@id/tvYemekAd"
+                    app:layout_constraintTop_toBottomOf="@+id/tvYemekAd" />
+
+                <TextView
+                    android:id="@+id/yemekSiparisAdet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='@{sepetYemeklerObject.yemek_siparis_adet+" Adet"}'
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/tvYemekAd"
+                    app:layout_constraintStart_toEndOf="@id/yemekFiyat"
+                    app:layout_constraintTop_toBottomOf="@+id/tvYemekAd" />
+
+                <TextView
+                    android:id="@+id/yemekToplamFiyat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:text='@{Integer.toString(sepetYemeklerObject.yemek_fiyat*sepetYemeklerObject.yemek_siparis_adet)+".00 ₺"}'
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/ivDelete"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/ivDelete"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginEnd="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.49"
                     app:srcCompat="@drawable/ic_delete" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 </layout>

@@ -40,7 +40,6 @@ class YemeklerAdapter(var mContext: Context, var yemekListesi: List<Yemekler>, v
         holder.binding.cardYemek.setOnClickListener {
             val gecis = HomeFragmentDirections.actionHomeFragmentToYemekDetayFragment(yemek)
             Navigation.findNavController(it).navigate(gecis)
-
         }
     }
 

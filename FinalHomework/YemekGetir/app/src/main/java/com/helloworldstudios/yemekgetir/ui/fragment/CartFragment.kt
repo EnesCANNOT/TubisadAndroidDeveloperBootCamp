@@ -21,19 +21,41 @@ class CartFragment : Fragment() {
 
     private lateinit var binding: FragmentCartBinding
     private lateinit var viewModel: CartFragmentViewModel
-    private lateinit var viewModelHome: HomeFragmentViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_cart, container, false)
         binding.cartFragmentObject = this
 
-        viewModel.sepetYemeklerListesi.observe(viewLifecycleOwner){
+
+        binding.tvTotalPrice.visibility = View.INVISIBLE
+        binding.tvTotal.visibility = View.INVISIBLE
+        binding.buttonConfirmCart.visibility = View.INVISIBLE
+
+        viewModel.sepettekiYemekListesi.observe(viewLifecycleOwner){
             val cartAdapter = SepetYemeklerAdapter(requireContext(), it, viewModel)
             binding.sepetYemeklerAdapter = cartAdapter
 
             var totalPrice = 0
             it.forEach{ yemek ->
                 totalPrice += yemek.yemek_siparis_adet * yemek.yemek_fiyat
+            }
+
+            viewModel.sepettekiYemekListesi.observe(viewLifecycleOwner) {
+                if (it.isEmpty()) {
+                    binding.recyclerView.visibility= View.INVISIBLE
+                    binding.tvTotalPrice.visibility = View.INVISIBLE
+                    binding.tvTotal.visibility = View.INVISIBLE
+                    binding.buttonConfirmCart.visibility = View.INVISIBLE
+                    binding.anim.visibility = View.VISIBLE
+                    binding.sepetBos.visibility = View.VISIBLE
+                } else {
+                    binding.recyclerView.visibility = View.VISIBLE
+                    binding.tvTotalPrice.visibility = View.VISIBLE
+                    binding.tvTotal.visibility = View.VISIBLE
+                    binding.buttonConfirmCart.visibility = View.VISIBLE
+                    binding.anim.visibility = View.INVISIBLE
+                    binding.sepetBos.visibility = View.INVISIBLE
+                }
             }
 
             binding.tvTotalPrice.setText("${totalPrice.toString()} ₺")
@@ -49,10 +71,7 @@ class CartFragment : Fragment() {
     }
 
     fun buttonConfirmCart () {
-        Toast.makeText(requireContext(), "Your cart has been confirmed", Toast.LENGTH_LONG).show()
-    }
-
-    fun deleteFood(yemek_id: Int){
-        viewModel.sil(yemek_id)
+        Toast.makeText(requireContext(), "Sepetiniz onaylandı!", Toast.LENGTH_LONG).show()
+        //viewModel.tumYemekleriSil()
     }
 }

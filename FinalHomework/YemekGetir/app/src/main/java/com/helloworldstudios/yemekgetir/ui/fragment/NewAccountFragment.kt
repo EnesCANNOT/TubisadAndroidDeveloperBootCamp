@@ -58,7 +58,7 @@ class NewAccountFragment : Fragment() {
         if (fullname.isEmpty()){
             binding.etFullnameFromNewAccountFragment.requestFocus()
             Log.e("New Account Fragment", "Fullname is empty")
-            Toast.makeText(requireActivity(), R.string.fullname_empty_from_new_acc_fragment, Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), "Fullname boş olamaz!", Toast.LENGTH_LONG).show()
             return false
         } else{
             Log.e("New Account Fragment", "Fullname is okay")
@@ -70,12 +70,12 @@ class NewAccountFragment : Fragment() {
         if(email.isEmpty()){
             binding.etEmailFromNewAccountFragment.requestFocus()
             Log.e("New Account Fragment", "Email is empty")
-            Toast.makeText(requireActivity(), R.string.email_can_not_be_empty, Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), "Email boş olamaz!", Toast.LENGTH_LONG).show()
             return false
         } else{
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 Log.e("New Account Fragment", "Email not matched")
-                Toast.makeText(requireActivity(), R.string.invalid_email_type, Toast.LENGTH_LONG).show()
+                Toast.makeText(requireActivity(), "Geçersiz Email Tipi!\nÖrnek Email : yemekgetir@gmail.com", Toast.LENGTH_LONG).show()
                 return false
             } else{
                 Log.e("New Account Fragment", "Email is okay")
@@ -88,7 +88,7 @@ class NewAccountFragment : Fragment() {
         if (phoneNo.isEmpty()){
             binding.etPhoneNumberFromNewAccountFragment.requestFocus()
             Log.e("New Account Fragment", "Phone Number is empty")
-            Toast.makeText(requireActivity(), R.string.phone_number_is_empty, Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), "Telefon numarası boş olamaz!", Toast.LENGTH_LONG).show()
             return false
         } else{
             var pattern : Pattern = Pattern.compile("(05|5)[0-9][0-9][1-9]([0-9]){6}")
@@ -96,7 +96,7 @@ class NewAccountFragment : Fragment() {
 
             if (!matcher.matches()){
                 Log.e("New Account Fragment", "Phone Number pattern is invalid")
-                Toast.makeText(requireActivity(), R.string.phone_number_is_invalid, Toast.LENGTH_LONG).show()
+                Toast.makeText(requireActivity(), "Geçersiz telefon numarası tipi\nExample Phone No : 05XXXXXXXXX", Toast.LENGTH_LONG).show()
                 return false
             } else{
                 Log.e("New Account Fragment", "Phone Number pattern is valid")
@@ -121,13 +121,13 @@ class NewAccountFragment : Fragment() {
                     binding.etPassword1FromNewAccountFragment.requestFocus()
                     binding.etPassword2FromNewAccountFragment.requestFocus()
                     Log.e("New Account Fragment", "Passwords length is smaller than $passwordLength")
-                    Toast.makeText(requireActivity(), (R.string.password_length_can_not_be_smaller_than_passwordLength + passwordLength), Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireActivity(), "Parola uzunluğu ${passwordLength} dan kısa olamaz!", Toast.LENGTH_LONG).show()
                     return false
                 } else{
                     return true
                 }
             } else{
-                Toast.makeText(requireActivity(), R.string.password_not_matched, Toast.LENGTH_LONG).show()
+                Toast.makeText(requireActivity(), "Girdiğiniz parolalar aynı değil!", Toast.LENGTH_LONG).show()
                 return false
             }
         }
@@ -147,7 +147,7 @@ class NewAccountFragment : Fragment() {
                                 findNavController().popBackStack()
                             }
 
-                            Snackbar.make(requireView(), "Verification email send to ${currentUser.email}", Snackbar.LENGTH_LONG).show()
+                            Snackbar.make(requireView(), "Doğrulama maili gönderildi : ${currentUser.email}", Snackbar.LENGTH_LONG).show()
 
 //                            Snackbar.make(requireView(), "Verification email send to ${currentUser.email}", Snackbar.LENGTH_INDEFINITE).setAction("Go to email app"){
 //                                val emailIntent = Intent(Intent.ACTION_MAIN);

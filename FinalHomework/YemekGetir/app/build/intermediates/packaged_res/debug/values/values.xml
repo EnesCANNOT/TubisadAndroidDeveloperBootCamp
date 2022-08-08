@@ -8,10 +8,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="textColor">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="added_to_cart"> added to cart</string>
+    <string name="amount"> adet </string>
+    <string name="amount_zero">Amount can not be 0!</string>
     <string name="app_name">YemekGetir</string>
+    <string name="auth_failed">Authentication failed!</string>
+    <string name="cart_confirmed">Your cart has been confirmed!</string>
     <string name="default_web_client_id" translatable="false">767066815459-elki1cp92r98s1kdkjnuq6ugjhsbl24d.apps.googleusercontent.com</string>
     <string name="email_can_not_be_empty">Email can not be empty!</string>
-    <string name="email_not_matched_new_acc_fragment">Invalid Email Type!\nExample Email : yetis@gmail.com</string>
     <string name="fullname_empty_from_new_acc_fragment">Fullname can not be empty!</string>
     <string name="gcm_defaultSenderId" translatable="false">767066815459</string>
     <string name="google_api_key" translatable="false">AIzaSyDeVvKyd6ywLYYuTF60Plso7K9qkkiqo4k</string>
@@ -26,6 +30,8 @@
     <string name="phone_number_is_empty">Phone Number can not be empty!</string>
     <string name="phone_number_is_invalid">Invalid Phone No Type!\nExample Phone No : 05XXXXXXXXX</string>
     <string name="project_id" translatable="false">yemeksiparis-28622</string>
+    <string name="verification_email">Verification email send to : </string>
+    <string name="verify_registration">You must verify your registration</string>
     <style name="Theme.YemekGetir" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

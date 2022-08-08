@@ -8,32 +8,79 @@ import com.helloworldstudios.yemekgetir.retrofit.YemeklerDao
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import javax.inject.Inject
 
-class YemeklerDaoRepository(var ydao: YemeklerDao) {
-    var yemeklerListesi : MutableLiveData<List<Yemekler>>
-    var sepetListesi : MutableLiveData<List<SepetYemekler>>
+
+class YemeklerDaoRepository @Inject constructor(var ydao: YemeklerDao) {
+    var yemeklerListesi: MutableLiveData<List<Yemekler>>
+    var sepetYemekListesi: MutableLiveData<List<SepetYemekler>>
 
     init {
         yemeklerListesi = MutableLiveData()
-        sepetListesi = MutableLiveData()
+        sepetYemekListesi = MutableLiveData()
     }
 
-    fun yemekleriGetir() : MutableLiveData<List<Yemekler>> {
+    fun yemekleriGetir(): MutableLiveData<List<Yemekler>> {
         return yemeklerListesi
     }
 
-    fun sepetiGetir() : MutableLiveData<List<SepetYemekler>> {
-        return sepetListesi
+    fun sepettekiYemekleriGetir(): MutableLiveData<List<SepetYemekler>> {
+        return sepetYemekListesi
     }
 
-    fun tumSepetYemekleriAl(kullanici_adi: String) {
-        ydao.sepetGoster(kullanici_adi).enqueue(object: Callback<SepetYemeklerCevap> {
-            override fun onResponse(call: Call<SepetYemeklerCevap>?, response: Response<SepetYemeklerCevap>) {
-                val sepetListe = response.body()!!.sepet_yemekler
-                sepetListesi.value = sepetListe
+    fun siparisKayit(yemek_adi: String, yemek_resim_adi: String, yemek_fiyat: Int, yemek_siparis_adet: Int, kullanici_adi: String) {
+        ydao.sepeteYemekEkle(yemek_adi, yemek_resim_adi, yemek_fiyat, yemek_siparis_adet, kullanici_adi)
+            .enqueue(object : Callback<CRUDCevap> {
+                override fun onResponse(call: Call<CRUDCevap>?, response: Response<CRUDCevap>) {
+                    val basari = response.body()!!.success
+                    val mesaj = response.body()!!.message
+                    Log.e("Sipariş Oluştu", "$basari - $mesaj")
+                }
+
+                override fun onFailure(call: Call<CRUDCevap>?, t: Throwable?) {
+                }
+            })
+    }
+
+    fun sepettekiYemekleriAl(kullanici_adi: String) {
+        ydao.sepettekiYemekleriGetir(kullanici_adi).enqueue(object : Callback<SepetYemeklerCevap> {
+            override fun onResponse(
+                call: Call<SepetYemeklerCevap>?,
+                response: Response<SepetYemeklerCevap>
+            ) {
+                val liste = response.body()!!.sepet_yemekler
+                sepetYemekListesi.value = liste
+            }
+            override fun onFailure(call: Call<SepetYemeklerCevap>?, t: Throwable?) {
+                sepetYemekListesi.value = emptyList()
+            }
+        })
+    }
+
+    fun sepettekiYemekSil(sepet_yemek_id: Int, kullanici_adi: String) {
+        ydao.sepettekiYemekSil(sepet_yemek_id, kullanici_adi)
+            .enqueue(object : Callback<SepetYemeklerCevap> {
+                override fun onResponse(
+                    call: Call<SepetYemeklerCevap>?,
+                    response: Response<SepetYemeklerCevap>
+                ) {
+                    val basari = response.body()!!.success
+                    Log.e("Sipariş silindi", "$basari")
+                    sepettekiYemekleriAl(kullanici_adi)
+                }
+                override fun onFailure(call: Call<SepetYemeklerCevap>?, t: Throwable?) {
+                }
+            })
+    }
+
+    fun tumYemekleriAl() {
+        ydao.tumYemekler().enqueue(object : Callback<YemeklerCevap> {
+            override fun onResponse(call: Call<YemeklerCevap>?, response: Response<YemeklerCevap>) {
+                val liste = response.body()!!.yemekler
+                yemeklerListesi.value = liste
             }
 
-            override fun onFailure(call: Call<SepetYemeklerCevap>?, t: Throwable?) {}
+            override fun onFailure(call: Call<YemeklerCevap>?, t: Throwable?) {}
         })
     }
 
@@ -100,59 +147,6 @@ class YemeklerDaoRepository(var ydao: YemeklerDao) {
                 yemeklerListesi.value = sonuc
             }
             override fun onFailure(call: Call<YemeklerCevap>?, t: Throwable?) {}
-        })
-    }
-
-
-    fun yemekSepeteEkle(yemek_adi:String, yemek_resim_adi:String, yemek_fiyat:Int, yemek_siparis_adet:Int, kullanici_adi:String){
-        ydao.sepetYemekEkle(yemek_adi,yemek_resim_adi,yemek_fiyat,yemek_siparis_adet,kullanici_adi).enqueue(object :
-            Callback<CRUDCevap> {
-            override fun onResponse(call: Call<CRUDCevap>?, response: Response<CRUDCevap>) {
-                val basari = response.body()!!.success
-                val mesaj = response.body()!!.message
-                Log.e("Yemek sepete ekle", "$basari - $mesaj")
-            }
-
-            override fun onFailure(call: Call<CRUDCevap>, t: Throwable) {}
-        })
-    }
-
-    fun sepetYemekSil(sepet_yemek_id:Int){
-        ydao.sepettenSil(sepet_yemek_id,FirebaseAuth.getInstance().currentUser!!.email.toString()).enqueue(object : Callback<CRUDCevap> {
-            override fun onResponse(call: Call<CRUDCevap>?, response: Response<CRUDCevap>) {
-                val basari = response.body()!!.success
-                val mesaj = response.body()!!.message
-                Log.e("Yemek sepete ekle", "$basari - $mesaj")
-                tumSepetiGoster()
-            }
-
-            override fun onFailure(call: Call<CRUDCevap>, t: Throwable) {}
-        })
-    }
-
-    fun tumSepetiGoster(){
-        ydao.sepetGoster(FirebaseAuth.getInstance().currentUser!!.email.toString()).enqueue(object: Callback<SepetYemeklerCevap> {
-            override fun onResponse(call: Call<SepetYemeklerCevap>?, response: Response<SepetYemeklerCevap>) {
-                Log.e("Look", response!!.body().toString())
-                if (response.body() != null){
-                    val liste = response.body()!!.sepet_yemekler
-                    sepetListesi.value = liste
-                } else{
-                    sepetListesi.value = mutableListOf()//***
-                }
-
-
-//                if(sepetListesi.value != null){
-//                    if (response.body() != null){
-//                        sepetListesi.value!!.filter {
-//                            it !in response!!.body()!!.sepet_yemekler
-//                        }
-//                    }
-//                }
-
-            }
-
-            override fun onFailure(call: Call<SepetYemeklerCevap>, t: Throwable) {}
         })
     }
 }

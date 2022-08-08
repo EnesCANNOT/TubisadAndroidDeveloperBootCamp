@@ -60,14 +60,17 @@ class LoginFragment : Fragment() {
                         //Animation
                         Navigation.findNavController(requireView()).navigate(R.id.action_loginFragment_to_successfullyLoginSplashFragment)
                     } else{
-                        Snackbar.make(requireView(), "You must verify your registration", Snackbar.LENGTH_LONG).setAction("Go to email app"){
-                            val emailIntent = Intent(Intent.ACTION_MAIN);
-                            emailIntent.addCategory(Intent.CATEGORY_APP_EMAIL);
-                            startActivity(emailIntent)
-                        }.show()
+
+                        Snackbar.make(requireView(), "Kaydınızı doğrulamanız gerekiyor", Snackbar.LENGTH_LONG).show()
+
+//                        Snackbar.make(requireView(), R.string.verify_registration, Snackbar.LENGTH_LONG).setAction("Go to email app"){
+//                            val emailIntent = Intent(Intent.ACTION_MAIN);
+//                            emailIntent.addCategory(Intent.CATEGORY_APP_EMAIL);
+//                            startActivity(emailIntent)
+//                        }.show()
                     }
                 } else{
-                    Toast.makeText(requireActivity(), "Authentication failed", Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireActivity(), "Emailiniz doğrulanmadı!", Toast.LENGTH_LONG).show()
                 }
             }
     }

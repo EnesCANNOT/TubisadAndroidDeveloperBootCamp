@@ -2718,6 +2718,7 @@ id all
 id allStates
 id always
 id androidx_window_activity_scope
+id anim
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -2762,6 +2763,7 @@ id buttonZ_A
 id cache_measures
 id callMeasure
 id cancel_button
+id cardSepetYemek
 id cardYemek
 id carryVelocity
 id cartFragment
@@ -2915,7 +2917,7 @@ id ivDelete
 id ivProfileFragment
 id ivYemekDetayFragment
 id ivYemekResim
-id ivYemekResimCart
+id ivYemekSepet
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3078,6 +3080,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sepetBos
 id sepeteEkle
 id sharedValueSet
 id sharedValueUnset
@@ -3152,6 +3155,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewYemekAd
+id textViewYemekFiyat
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon
@@ -3190,11 +3195,7 @@ id tvUserEmail
 id tvUserFullname
 id tvUserPhone
 id tvYemekAd
-id tvYemekAdCart
 id tvYemekAdDetayFragment
-id tvYemekAdetCart
-id tvYemekFiyat
-id tvYemekFiyatCart
 id tvYemekFiyatDetayFragment
 id unchecked
 id uniform
@@ -3221,7 +3222,9 @@ id x_left
 id x_right
 id yemekAdet
 id yemekDetayFragment
+id yemekFiyat
 id yemekSiparisAdet
+id yemekToplamFiyat
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -3430,6 +3433,7 @@ plurals mtrl_badge_content_description
 raw keep
 raw login
 raw okey
+raw sepet
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3457,11 +3461,16 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string added_to_cart
+string amount
+string amount_zero
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string auth_failed
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string cart_confirmed
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3488,7 +3497,6 @@ string common_signin_button_text_long
 string copy_toast_msg
 string default_web_client_id
 string email_can_not_be_empty
-string email_not_matched_new_acc_fragment
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3594,6 +3602,8 @@ string phone_number_is_invalid
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string verification_email
+string verify_registration
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

@@ -12,6 +12,7 @@ import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import com.airbnb.lottie.LottieAnimationView;
 import com.helloworldstudios.yemekgetir.R;
 import com.helloworldstudios.yemekgetir.ui.adapter.SepetYemeklerAdapter;
 import com.helloworldstudios.yemekgetir.ui.fragment.CartFragment;
@@ -20,10 +21,16 @@ import java.lang.Object;
 
 public abstract class FragmentCartBinding extends ViewDataBinding {
   @NonNull
+  public final LottieAnimationView anim;
+
+  @NonNull
   public final Button buttonConfirmCart;
 
   @NonNull
   public final RecyclerView recyclerView;
+
+  @NonNull
+  public final TextView sepetBos;
 
   @NonNull
   public final TextView tvTotal;
@@ -38,11 +45,13 @@ public abstract class FragmentCartBinding extends ViewDataBinding {
   protected SepetYemeklerAdapter mSepetYemeklerAdapter;
 
   protected FragmentCartBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button buttonConfirmCart, RecyclerView recyclerView, TextView tvTotal,
-      TextView tvTotalPrice) {
+      LottieAnimationView anim, Button buttonConfirmCart, RecyclerView recyclerView,
+      TextView sepetBos, TextView tvTotal, TextView tvTotalPrice) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.anim = anim;
     this.buttonConfirmCart = buttonConfirmCart;
     this.recyclerView = recyclerView;
+    this.sepetBos = sepetBos;
     this.tvTotal = tvTotal;
     this.tvTotalPrice = tvTotalPrice;
   }

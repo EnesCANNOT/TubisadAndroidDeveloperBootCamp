@@ -64,13 +64,13 @@ class YemekDetayFragment : Fragment() {
         if (yemekAdet > 1){
             binding.yemekSiparisAdet.text = (yemekAdet - 1).toString()
         } else{
-            Toast.makeText(requireContext(), "Amount can not be 0", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "Ürün miktarı 0 olamaz.", Toast.LENGTH_SHORT).show()
         }
 
     }
 
     fun buttonAddToCart(yemek_adi: String, yemek_resim_adi: String, yemek_fiyat: Int, yemek_siparis_adet: Int){
-        viewModel.addToCart(yemek_adi, yemek_resim_adi, yemek_fiyat, yemek_siparis_adet, FirebaseAuth.getInstance().currentUser!!.email.toString())
+        viewModel.sepeteEkle(yemek_adi, yemek_resim_adi, yemek_fiyat, yemek_siparis_adet, FirebaseAuth.getInstance().currentUser!!.email.toString())
         Toast.makeText(requireContext(), (yemek_siparis_adet.toString() + " adet " + yemek_adi.toString() + " sepete eklendi."), Toast.LENGTH_LONG).show()
         Navigation.findNavController(requireView()).navigate(R.id.action_yemekDetayFragment_to_homeFragment)
     }
